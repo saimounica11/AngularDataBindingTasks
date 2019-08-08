@@ -1,0 +1,9 @@
+<p>component1 works!</p>
+
+<div>
+    <h2>Welcome to {{title}}</h2>
+    <h3> <input #myIn type="text">
+    <button (click)="myIn.value">Click</button>
+    </h3>
+</div>
+<app-component2 [parentData]="myIn.value"></app-component2>
